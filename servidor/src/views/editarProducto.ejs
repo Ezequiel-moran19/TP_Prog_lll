@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+ <%- include('partials/head', { titulo: "Editar productos" }) %>
+<body>
+  <main class="container">
+      <%- include('partials/header') %>
+      <section id="principal" class="d-flex justify-content-center mt-4 p-2">
+        <div id="divIngreso" class="shadow p-3 rounded" style="width: 100%; max-width: 400px; overflow-y: auto; max-height: 90vh;">
+          <h2 class="text-center mb-1">Editar producto</h2>
+          <form action="/api/productos/<%= producto.id %>" method="POST" enctype="multipart/form-data">
+            <div class="mb-1 text-center">
+              <label for="nombre" class="form-label small">Nombre</label>
+              <input type="text" name="nombre" class="form-control form-control-sm" value="<%= producto.nombre %>">
+            </div>
+
+            <div class="mb-1 text-center">
+              <label for="descripcion" class="form-label small">Descripción</label>
+              <input type="text" name="descripcion" class="form-control form-control-sm" value="<%= producto.descripcion %>">
+            </div>
+
+            <div class="mb-1 text-center">
+              <label for="precio" class="form-label small">Precio</label>
+              <input type="number" name="precio" class="form-control form-control-sm" value="<%= producto.precio %>">
+            </div>
+
+            <div class="mb-1 text-center">
+              <label for="categoria" class="form-label small">Categoría</label>
+              <input type="text" name="categoria" class="form-control form-control-sm" value="<%= producto.categoria %>">
+            </div>
+
+            <div class="mb-1 text-center">
+              <label for="stock" class="form-label small">Stock</label>
+              <input type="number" name="stock" class="form-control form-control-sm" value="<%= producto.stock %>">
+            </div>
+
+            <div class="mb-2 text-center">
+              <label class="form-label small">Imagen actual</label>
+              <div>
+                <img src="<%= producto.rutaImg %>" alt="Imagen actual" style="width:100px; height:100px; object-fit:cover;">
+              </div>
+            </div>
+
+            <div class="mb-2 text-center">
+              <label for="imgProductos" class="form-label small">Cambiar imagen</label>
+              <input type="file" name="imgProductos" class="form-control form-control-sm">
+            </div>
+
+            <button type="submit" class="btn btn-danger w-100 btn-sm">Editar producto</button>
+            <a href="/admin/dashboard" class="btn btn-secondary w-100 mt-2 btn-sm">Cancelar</a>
+          </form>
+        </div>
+      </section>
+  </main>
+  <script type="module" src="/admin/public/theme.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

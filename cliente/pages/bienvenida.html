@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canto Rodado</title>
+    <link rel="icon" href="/assets/img/favicon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/modo.css" />
+</head>
+<body>
+  <main class="container mt-2">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-danger" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18V5l12-2v13"></path>
+                <circle cx="6" cy="18" r="3"></circle>
+                <circle cx="18" cy="16" r="3"></circle>
+              </svg>
+              <span class="ms-2">Canto Rodado</span>
+            </a>
+            <div class="contendor-nav d-flex justify-content-center align-items-center ms-auto gap-3">
+                <a class="nav-link d-flex align-items-center p-3" href="/admin/login"><i class="bi bi-person me-1"></i>Admin</a>
+                <button id="modo-oscuro" class="btn d-flex align-items-center p-3"> <i id="icono-modo" class="bi bi-moon-fill"></i> </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+ 
+      <section id="principal" class="d-flex justify-content-center align-items-center vh-100">
+        <div id="divIngreso" class="bg-white shadow rounded p-5 text-center" style="max-width:400px;">
+            <img src="/assets/img/favicon.png" class="mb-3">
+            <h1 class="fw-bold fs-3 text-dark">Canto Rodado</h1>
+            <p class="text-secondary fs-6 mb-4">Bienvenido a nuestra tienda de instrumentos musicales</p>
+            <form>
+              <label for="fNombre" class="form-label fw-semibold text-secondary">Ingrese su nombre</label>
+              <input type="text" id="fNombre" class="form-control mb-3 border border-danger border-2 rounded" required>
+              <button type="submit" class="btn btn-danger w-100 py-2">Ingresar</button>
+            </form>
+        </div>
+      </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+.modo-oscuro {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.modo-oscuro #divIngreso {
+  background-color: #1e1e1e !important;
+  color: #fff !important;
+  border: 1px solid #333;
+}
+
+.modo-oscuro input[type="text"],
+.modo-oscuro input[type="password"],
+.modo-oscuro input[type="number"],
+.modo-oscuro input[type="file"] {
+  background-color: #333 !important;
+  color: #fff !important;
+  border-color: #555 !important;
+}
+
+.modo-oscuro input[type="submit"] {
+  background-color: #e91e63 !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+.modo-oscuro input[type="submit"]:hover {
+  background-color: #640d30 !important;
+}
+
+.contendor-nav .nav-link {
+  color: #000;
+}
+
+.modo-oscuro .contendor-nav .nav-link {
+  color: #fff;
+}
+
+.contendor-nav .nav-link:hover,
+.modo-oscuro .contendor-nav .nav-link:hover,
+#modo-oscuro:hover,
+.modo-oscuro #modo-oscuro:hover {
+  background-color: #dc3545 !important;
+  color: #fff !important;
+  transform: scale(1.05);
+}
+
+.modo-oscuro #icono-modo {
+  color: #fff !important;
+}
+
+.modo-oscuro .btn.bg-light,
+.modo-oscuro #filtros .btn-light,
+.modo-oscuro #pagina-siguiente,
+.modo-oscuro #pagina-anterior {
+  background-color: #1e1e1e !important;
+  color: #fff !important;
+  border-color: #333 !important;
+}
+
+.modo-oscuro .btn.bg-light:hover,
+.modo-oscuro #filtros .btn-light:hover,
+.modo-oscuro #pagina-siguiente:hover,
+.modo-oscuro #pagina-anterior:hover {
+  background-color: #dc3545 !important;
+  color: #fff !important;
+  border-color: #dc3545 !important;
+  transform: scale(1.05);
+}
+
+.modo-oscuro .bg-light {
+  background-color: #000 !important;
+  color: #fff !important;
+  border-top: 1px solid #333;
+}
+
+.modo-oscuro i,
+.modo-oscuro a {
+  color: #fff !important;
+}

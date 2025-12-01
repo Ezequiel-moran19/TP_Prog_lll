@@ -1,0 +1,173 @@
+/* Fondo general */
+.modo-oscuro {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+/* Login box */
+.modo-oscuro #divIngreso {
+  background-color: #1e1e1e !important;
+  color: #fff !important;
+  border: 1px solid #333;
+}
+
+/* Inputs y botones */
+.modo-oscuro input[type="text"] {
+  background-color: #333 !important;
+  color: #fff !important;
+  border-color: #555 !important;
+}
+
+.modo-oscuro input[type="submit"] {
+  background-color: #e91e63 !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+.modo-oscuro input[type="submit"]:hover {
+  background-color: #640d30 !important;
+}
+
+.contendor-nav .nav-link {
+  color: #000;
+}
+.modo-oscuro .contendor-nav .nav-link {
+  color: #fff;
+}
+
+.modo-oscuro .btn.bg-light {
+  background-color: #1e1e1e !important;
+  color: #fff !important;
+  border-color: #333 !important;
+}
+.modo-oscuro .btn.bg-light:hover {
+  background-color: #dc3545 !important;
+  color: #fff !important;
+  border-color: #dc3545 !important;
+  transform: scale(1.05);
+}.modo-oscuro {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.contendor-nav .nav-link {
+  color: #000;
+}
+.modo-oscuro .contendor-nav .nav-link {
+  color: #fff;
+}
+
+.modo-oscuro .btn.bg-light{
+  background-color: #1e1e1e !important;
+  color: #fff !important;
+  border-color: #333 !important;
+}
+.modo-oscuro .btn.bg-light:hover {
+  background-color: #dc3545 !important;
+  color: #fff !important;
+  border-color: #dc3545 !important;
+  transform: scale(1.05);
+}
+
+.contendor-nav .nav-link:hover,
+.modo-oscuro .contendor-nav .nav-link:hover,
+#modo-oscuro:hover,
+.modo-oscuro #modo-oscuro:hover,
+.modo-oscuro #filtros .btn-light:hover,
+.modo-oscuro #siguiente:hover,
+.modo-oscuro #anterior:hover {
+  background-color: #dc3545 !important;
+  color: #fff !important;
+  transform: scale(1.05);
+}
+
+.modo-oscuro .card {
+  background-color: #1e1e1e !important;
+  color: #fff !important;
+  border: 1px solid #333;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.modo-oscuro .card-title,
+.modo-oscuro .card-text,
+.modo-oscuro .descripcion,
+.modo-oscuro .cantidad, 
+.modo-oscuro .precio {
+  color: #fff !important;
+}
+
+.modo-oscuro .bg-light {
+  background-color: #000 !important;
+  color: #fff !important;
+  border-top: 1px solid #333;
+}
+
+.modo-oscuro i,
+.modo-oscuro a {
+  color: #fff !important;
+}
+
+.modo-oscuro #filtros .btn-light,
+.modo-oscuro #siguiente,
+.modo-oscuro #anterior { 
+  background-color: #1e1e1e !important;
+  color: #fff !important;
+  border-color: #333 !important;
+}
+
+.modo-oscuro .mas,
+.modo-oscuro .menos {
+  background-color: #000 !important; /* negro puro */
+  color: #fff !important;            /* texto blanco */
+  border: 1px solid #333 !important; /* borde sutil */
+  transition: all 0.2s ease-in-out;
+}
+
+.modo-oscuro .mas:hover,
+.modo-oscuro .menos:hover {
+  background-color: #dc3545 !important; /* rojo hover */
+  color: #fff !important;
+  border-color: #dc3545 !important;
+  transform: scale(1.05); /* efecto leve */
+}
+
+.contendor-nav .nav-link:hover,
+.modo-oscuro .contendor-nav .nav-link:hover,
+#modo-oscuro:hover,
+.modo-oscuro #modo-oscuro:hover,
+.modo-oscuro #filtros .btn-light:hover,
+.modo-oscuro #siguiente:hover,
+.modo-oscuro #anterior:hover {
+  background-color: #dc3545 !important;
+  color: #fff !important;
+  transform: scale(1.05);
+}
+
+.modo-oscuro .card {
+  background-color: #1e1e1e !important;
+  color: #fff !important;
+  border: 1px solid #333;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.modo-oscuro .card-title,
+.modo-oscuro .card-text {
+  color: #fff !important;
+}
+
+.modo-oscuro .bg-light {
+  background-color: #000 !important;
+  color: #fff !important;
+  border-top: 1px solid #333;
+}
+
+.modo-oscuro i,
+.modo-oscuro a {
+  color: #fff !important;
+}
+
+.modo-oscuro #filtros .btn-light,
+.modo-oscuro #siguiente,
+.modo-oscuro #anterior {
+  background-color: #1e1e1e !important;
+  color: #fff !important;
+  border-color: #333 !important;
+}

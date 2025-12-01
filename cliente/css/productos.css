@@ -1,0 +1,27 @@
+#productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.btn-light:hover {
+  background-color: #dc3545 !important; 
+  color: #fff !important;           
+  border-color: #dc3545 !important; 
+  transition: all 0.3s ease;
+}
+
+.boton-card{
+    width: 100%;
+    height: 40px;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: white;
+}
+
