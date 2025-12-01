@@ -36,10 +36,6 @@ export class ProductoService {
     return await producto.update(datos);
   }
 
-  static async desactivarProducto(id) {
-    return await Producto.update({ estado: false }, { where: { id } });
-  }
-
   static async cambiarEstado(id, estado) {
     const producto = await Producto.findByPk(id);
     if (!producto) throw new Error("Producto no encontrado");

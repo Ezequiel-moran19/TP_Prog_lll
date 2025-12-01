@@ -15,6 +15,7 @@ async function startServer() {
     console.log("Tablas sincronizadas");
 
     await crearAdmin();
+    console.log("Usuario creado por defecto");
 
     app.listen(port, () => {
       console.log(`Servidor en http://localhost:${port}`);

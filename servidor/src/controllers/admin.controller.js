@@ -76,5 +76,3 @@ export class adminController{
         }
     }
 }
-
-export default adminController;

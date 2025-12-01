@@ -1,6 +1,6 @@
 import { VentaService } from "../services/venta.service.js";
 
-export class VentaController {
+class VentaController {
   static async crear(req, res) {
     try {
       const venta = await VentaService.crearVenta(req.body);
@@ -10,5 +10,4 @@ export class VentaController {
     }
   }
 }
-
 export default VentaController;

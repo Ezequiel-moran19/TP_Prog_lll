@@ -3,7 +3,7 @@ import { VentaService } from "../services/venta.service.js";
 import { normalizarTicket, renderHTMLDesdeEJS } from "../utils/ticket.utils.js";
 import { generarPDFdesdeHTML } from "../services/pdf.service.js";
 
-export default class TicketController {
+class TicketController {
 
   static async guardarTicket(req, res) {
     try {
@@ -19,9 +19,7 @@ export default class TicketController {
       const id = req.params.id;
 
       const ticket = await Venta.findByPk(id, {
-        include: [
-          { model: VentaItem, as: "items", include: [Producto] }
-        ]
+        include: [ { model: VentaItem, as: "items", include: [Producto] } ]
       });
 
       if (!ticket) return res.status(404).send("Ticket no encontrado");
@@ -39,9 +37,7 @@ export default class TicketController {
       const { id } = req.body;
 
       const ticket = await Venta.findByPk(id, {
-        include: [
-          { model: VentaItem, as: "items", include: [Producto] }
-        ]
+        include: [{ model: VentaItem, as: "items", include: [Producto] }]
       });
 
       if (!ticket) {
@@ -61,3 +57,4 @@ export default class TicketController {
     }
   }
 }
+export default TicketController;

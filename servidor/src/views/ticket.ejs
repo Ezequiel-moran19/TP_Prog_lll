@@ -1,39 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
- <%- include('partials/head', { titulo: "Ticket" }) %>
+  <%- include('partials/head', { titulo: "Ticket" }) %>
 <body>
     <section class="container">
         <div class="card shadow-lg mt-3">
             <div class="card-header text-center bg-light">
                 <h2 class="text-danger fw-bold m-0">¡Compra Exitosa!</h2>
             </div>
-
             <div class="card-body p-4">
-
                 <div class="bg-light p-3 rounded mb-4">
-                    <div class="d-flex justify-content-between"><strong>Ticket #:</strong><span><%= ticket.id %></span></div>
-                    <div class="d-flex justify-content-between"><strong>Fecha:</strong><span><%= ticket.fecha ?? ticket.createdAt %></span></div>
-                    <div class="d-flex justify-content-between"><strong>Cliente:</strong><span><%= ticket.nombreCliente %></span></div>
+                    <dl class="row m-0">
+                        <dt class="col-6 fw-bold">Ticket #:</dt>
+                        <dd class="col-6"><%= ticket.id %></dd>
+                        <dt class="col-6 fw-bold">Fecha:</dt>
+                        <dd class="col-6"><%= ticket.fecha ?? ticket.createdAt %></dd>
+                        <dt class="col-6 fw-bold">Cliente:</dt>
+                        <dd class="col-6"><%= ticket.nombreCliente %></dd>
+                    </dl>
                 </div>
 
                 <div class="mb-4">
                     <h5 class="fw-semibold mb-3">Productos Comprados</h5>
-
                     <% ticket.items.forEach(item => { %>
-                    <div class="p-3 mb-2 bg-light rounded d-flex justify-content-between align-items-center">
-
-                    <div>
-                        <p class="m-0 fw-medium"><%= item.Producto.nombre %></p>
-                        <small class="text-muted">Cantidad: <%= item.cantidad %></small>
-                        <p class="text-muted m-0">Precio unitario: $<%= item.precio.toLocaleString() %></p>
-                    </div>
-
-                    <p class="fw-bold m-0">
-                        $<%= (item.precio * item.cantidad).toLocaleString() %>
-                    </p>
-                    </div>
+                        <%- include('partials/ticketItem', { item }) %>
                     <% }) %>
-
                 </div>
 
                 <div class="border-top pt-3 mb-4">
@@ -42,25 +32,10 @@
                         <h4 class="text-success fw-bold m-0">$<%= ticket.total.toLocaleString() %></h4>
                     </div>
                 </div>
-
-                <div class="d-flex gap-3 no-print">
-                    <form action="/api/ticket/pdf" method="post" class="flex-fill" target="_blank">
-                        <input type="hidden" name="id" value="<%= ticket.id %>">
-                        <button type="submit" class="btn btn-danger">Descargar PDF</button>
-                    </form>
-
-                    <button onclick="cerrarSesion()" class="btn btn-outline-secondary ">
-                        Salir
-                    </button>
-                </div>
-
-            </div>
-
-            <div class="card-footer text-center text-muted small">
-                <p class="card-text m-0">Gracias por su compra</p>
+                <!-- Acciones -->
+                <%- include('partials/ticketActions', { ticket }) %>
             </div>
         </div>
-
     </section>
     <script src="/admin/public/ticket.js"></script>
 </body>

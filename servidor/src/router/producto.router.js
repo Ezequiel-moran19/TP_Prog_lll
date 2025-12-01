@@ -1,11 +1,9 @@
 import { Router } from "express";
 import multer from "multer";
-
 // Controllers
 import ProductoController from "../controllers/producto.controller.js";
 import VentaController from "../controllers/venta.controller.js";
 import TicketController from "../controllers/ticket.controller.js";
-
 // Middlewares
 import { verificarAdmin } from "../middlewares/verificarAdmin.js";
 import { validarProducto } from "../middlewares/validarProducto.js";

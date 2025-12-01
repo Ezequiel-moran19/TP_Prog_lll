@@ -2,8 +2,7 @@ import { ProductoService } from "../services/producto.service.js";
 import { FileService } from "../services/file.service.js";
 import { obtenerDatosDelBody, obtenerDatosActualizacion } from "../utils/producto.utils.js";
 
-export class ProductoController {
-  
+class ProductoController {
   static async listar(req, res) {
     try {
       const productos = await ProductoService.listarProductos();
